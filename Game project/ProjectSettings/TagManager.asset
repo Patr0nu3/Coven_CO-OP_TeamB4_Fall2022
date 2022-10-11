@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TaskBoard
   - GameHandler
+  - Inventory
   layers:
   - Default
   - TransparentFX

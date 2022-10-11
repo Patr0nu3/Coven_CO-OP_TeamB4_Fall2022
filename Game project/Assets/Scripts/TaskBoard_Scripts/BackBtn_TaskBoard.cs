@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BackBtn_TaskBoard : MonoBehaviour
 {
-    public string LeaveTaskBoard = "AbbyTests";
+    public string LeaveTaskBoard = "STARTER_GAME";
     
     void OnMouseDown() {
         // if (Input.GetMouseButtonDown(0)) {
