@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/AbbyTests.unity
     guid: aafddb68c93ee49e98532c4c87fbdd0f
   - enabled: 1
-    path: Assets/Scenes/ViewTaskBoard.unity
-    guid: a9b4f50b7da744dfeb3ef50ba60c0c40
-  - enabled: 1
     path: Assets/Scenes/STARTER_GAME.unity
     guid: 0d110596540404fda93b9d4735cece74
+  - enabled: 1
+    path: Assets/Scenes/ViewTaskBoard.unity
+    guid: a9b4f50b7da744dfeb3ef50ba60c0c40
   m_configObjects: {}
