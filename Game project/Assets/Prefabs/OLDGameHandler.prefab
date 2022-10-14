@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8314726367261824114}
   - component: {fileID: 8314726367261824115}
   m_Layer: 0
-  m_Name: GameHandler
+  m_Name: OLDGameHandler
   m_TagString: GameHandler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
