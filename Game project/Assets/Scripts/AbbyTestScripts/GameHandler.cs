@@ -8,6 +8,7 @@ public class GameHandler : MonoBehaviour
 {
     // private GameObject player;
     [SerializeField] private UI_Inventory uiInventory;
+    [SerializeField] private Player player;
     
     public static GameHandler gameHandler;
     private InventoryA inventory;
@@ -25,5 +26,8 @@ public class GameHandler : MonoBehaviour
         // create Inventory
         inventory = new InventoryA();
         uiInventory.SetInventory(inventory); 
+        player.SetInventory(inventory);
+        
+        ItemWorld.SpawnItemWorld(new Vector3(5, 5), new Item { itemType = Item.ItemType.RedMushroom, amount = 1});
     }
 }

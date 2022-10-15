@@ -11,6 +11,9 @@ public class ItemAssets : MonoBehaviour
         Instance = this; 
     }
     
+    // item world prefab, instantiated in ItemWorld.cs
+    public Transform pfItemWorld;
+    
     // ALL OF OUR ASSETS (add more here as we get more)
     // also need to add it to switch case in Item.cs for function GetSprit
     public Sprite yellowFlowerSprite;

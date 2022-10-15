@@ -18,10 +18,24 @@ public class UI_Inventory : MonoBehaviour
     // sets inventory to ui inventory
     public void SetInventory(InventoryA inventory) {
         this.inventory = inventory;
+        // if item list has changed, refresh items UI
+        inventory.OnItemListChanged += Inventory_OnItemListChanged; 
         RefreshInventoryItems();
     }
     
+    // if inventory item list changed event triggered, refresh inventory UI
+    private void Inventory_OnItemListChanged(object sender, System.EventArgs e) {
+        RefreshInventoryItems();
+    }
+    
+    // sets inventory UI
     private void RefreshInventoryItems() {
+        // destroy the transforms of previous inventory except the template
+        foreach (Transform child in itemSlotContainer) {
+            if (child == itemSlotTemplate) continue;
+            Destroy(child.gameObject);
+        }
+        
         float x = -145f;
         float y = 0f;
         float itemSlotCellSize = 50f;
@@ -39,6 +53,14 @@ public class UI_Inventory : MonoBehaviour
             Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
             image.sprite = item.GetSprite();
             
+            // set item count
+            Text amountText = itemSlotRectTransform.Find("amountText").GetComponent<UnityEngine.UI.Text>();
+            Debug.Log(amountText);
+            if (item.amount > 1) {
+                amountText.text = item.amount.ToString();
+            } else {
+                amountText.text = "";
+            }
             
             x = x + itemSlotCellSize;
         }

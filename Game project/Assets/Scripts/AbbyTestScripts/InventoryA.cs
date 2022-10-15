@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryA
 {
+    public event EventHandler OnItemListChanged;
     private List<Item> itemList;
     
     // InventoryA constructor
@@ -21,7 +23,24 @@ public class InventoryA
     
     // adds an item to the inventory list 
     public void AddItem(Item item) {
-        itemList.Add(item);
+        if (item.IsStackable()) {
+            bool itemAlreadyInInventory = false;
+            // check if it exists in inventory
+            foreach (Item inventoryItem in itemList) {
+                if (inventoryItem.itemType == item.itemType) {
+                    inventoryItem.amount += item.amount;
+                    itemAlreadyInInventory = true;
+                }
+            }
+            // if it does not exist, add it
+            if (!itemAlreadyInInventory) {
+                itemList.Add(item);
+            }
+        } else {
+            itemList.Add(item);
+        }
+        
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
     
     // returns the inventory list
