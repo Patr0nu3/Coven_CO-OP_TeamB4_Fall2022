@@ -25,6 +25,7 @@ public class GameHandler : MonoBehaviour
         
         // create Inventory
         inventory = new InventoryA();
+        // uiInventory.SetPlayer(player);
         uiInventory.SetInventory(inventory); 
         player.SetInventory(inventory);
         

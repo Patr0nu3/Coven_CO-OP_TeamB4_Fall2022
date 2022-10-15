@@ -20,6 +20,16 @@ public class ItemWorld : MonoBehaviour
         return itemWorld;
     }
     
+    // drops item in world
+    public static ItemWorld DropItem(Vector3 dropPosition, Item item) {
+        // get a random direction
+        Vector3 ranDir = new Vector3(UnityEngine.Random.Range(-1f,1f), 
+                            UnityEngine.Random.Range(-1f,1f)).normalized;
+        ItemWorld itemWorld = SpawnItemWorld(dropPosition + ranDir * 2f, item);
+        itemWorld.GetComponent<Rigidbody2D>().AddForce(ranDir * 3f, ForceMode2D.Impulse);
+        return itemWorld;
+    }
+    
     // the item whose world this is
     private Item item;
     private SpriteRenderer spriteRenderer;

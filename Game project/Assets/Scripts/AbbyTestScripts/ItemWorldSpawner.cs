@@ -8,13 +8,8 @@ public class ItemWorldSpawner : MonoBehaviour
     
     // when created, it spawns an item in the world at the position
     // and destroys the spawner
-    private void Start() { 
-        if (item == null) {
-            Debug.Log("item null");
-        } else {
-            Debug.Log("item not null");
-        }
-        
+    private void Start() {         
+        item.amount = 1;
         ItemWorld.SpawnItemWorld(transform.position, item);
         Destroy(gameObject);
     }

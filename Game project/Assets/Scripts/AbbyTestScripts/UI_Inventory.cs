@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CodeMonkey.Utils;
 
 public class UI_Inventory : MonoBehaviour
 {
     private InventoryA inventory;
     private Transform itemSlotContainer;
     private Transform itemSlotTemplate;
+    private Player player;
     
     // grab all ui references 
     private void Awake() {
         itemSlotContainer = transform.Find("itemSlotContainer");
         itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
+    }
+    
+    public void SetPlayer(Player player) {
+        this.player = player;
     }
     
     // sets inventory to ui inventory
@@ -44,9 +50,20 @@ public class UI_Inventory : MonoBehaviour
         foreach (Item item in inventory.GetItemList()) {
             // gets the Rect Transform of the itemSlotTemplate
             RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
+            itemSlotRectTransform.gameObject.SetActive(true);
+             
+            // set click functions on item
+            itemSlotRectTransform.GetComponent<Button_UI>().ClickFunc = () => {
+                // use item 
+            };
+            itemSlotRectTransform.GetComponent<Button_UI>().MouseRightClickFunc = () => {
+                // drop item
+                inventory.RemoveItem(item);
+                // Debug.Log("item dropped count: " + item.amount);
+                ItemWorld.DropItem(player.GetPosition(), item);
+            };
             
             // set position
-            itemSlotRectTransform.gameObject.SetActive(true);
             itemSlotRectTransform.anchoredPosition = new Vector2(x, y);
             
             // set image
@@ -55,7 +72,6 @@ public class UI_Inventory : MonoBehaviour
             
             // set item count
             Text amountText = itemSlotRectTransform.Find("amountText").GetComponent<UnityEngine.UI.Text>();
-            Debug.Log(amountText);
             if (item.amount > 1) {
                 amountText.text = item.amount.ToString();
             } else {
