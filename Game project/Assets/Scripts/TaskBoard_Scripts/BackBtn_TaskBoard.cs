@@ -5,13 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class BackBtn_TaskBoard : MonoBehaviour
 {
-    public string LeaveTaskBoard = "STARTER_GAME";
+    public string LeaveTaskBoard = "MainMap";
     
     void OnMouseDown() {
         // if (Input.GetMouseButtonDown(0)) {
         Debug.Log("clicked");
             SceneManager.LoadScene(LeaveTaskBoard);
         // }
+    }
+
+    public void MoveToScene()
+    {
+        SceneManager.LoadScene(LeaveTaskBoard);
     }
     // void OnMouseDown()
     // {

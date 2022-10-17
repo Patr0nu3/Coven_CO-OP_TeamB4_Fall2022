@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 8251608727916405479}
   - component: {fileID: 6404934894958952751}
   - component: {fileID: 5311669719967099900}
+  - component: {fileID: -2931919805360556894}
   m_Layer: 5
-  m_Name: HealthButton
+  m_Name: itemPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1d52c76b8085ef64396bd08e69dd552d, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -121,3 +122,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-2931919805360556894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7652675059518983023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22642a1edf6df0040847c5550acc55ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotItem: {fileID: 0}
+  slotImage: {fileID: 6404934894958952751}
+  slotNum: {fileID: 0}
