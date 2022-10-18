@@ -13,22 +13,42 @@ public class GameHandler : MonoBehaviour
     public static GameHandler gameHandler;
     private InventoryA inventory;
 
-    private void Awake()
+    private void Start()
     {
-        // maintains GameHandler across scenes
-        if (gameHandler != null) {
-            Destroy(gameObject);
-            return;
-        }
-        gameHandler = this;
-        DontDestroyOnLoad(gameObject);
-        
-        // create Inventory
-        inventory = new InventoryA();
-        // uiInventory.SetPlayer(player);
-        uiInventory.SetInventory(inventory); 
-        player.SetInventory(inventory);
-        
-        ItemWorld.SpawnItemWorld(new Vector3(5, 5), new Item { itemType = Item.ItemType.RedMushroom, amount = 1});
     }
+
+    public void playerDies(){
+        //player.GetComponent<PlayerHurt>().playerDead();      //play Death animation
+        //StartCoroutine(DeathPause());
+    }
+
+    //IEnumerator DeathPause(){
+        //player.GetComponent<PlayerMove>().isAlive = false;
+        //player.GetComponent<PlayerJump>().isAlive = false;
+        //yield return new WaitForSeconds(1.0f);
+        //SceneManager.LoadScene("EndLose");
+    //}
+
+    public void StartGame() {
+        //SceneManager.LoadScene("Level1");
+    }
+
+    public void RestartGame() {
+        //SceneManager.LoadScene("MainMenu");
+        //playerHealth = StartPlayerHealth;
+    }
+
+    public void QuitGame() {
+            //if UNITY_EDITOR
+            //UnityEditor.EditorApplication.isPlaying = false;
+            //else
+                //Application.Quit();
+                //endif
+      }
+
+      public void Credits() {
+            //SceneManager.LoadScene("Credits");
+      }
+
 }
+

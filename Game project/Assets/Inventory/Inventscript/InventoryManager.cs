@@ -22,6 +22,10 @@ public class InventoryManager : MonoBehaviour
         instance = this;
     }
 
+    //void Start(){
+    //    myBag.SetActive(false);
+    //}
+
     private void OnEnable() {
         RefreshItem();
         instance.itemInfo.text = "";
