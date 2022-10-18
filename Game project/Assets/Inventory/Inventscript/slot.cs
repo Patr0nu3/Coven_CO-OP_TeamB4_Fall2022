@@ -16,6 +16,11 @@ public class slot : MonoBehaviour
         InventoryManager.UpdateItemInfo(slotItem.itemInfo);
     }
 
+    public items DeliverItem()
+    {
+        return slotItem;
+    }
+
     // public void SetUpSlot(items item)
     // {
     //     if (item == null) {
