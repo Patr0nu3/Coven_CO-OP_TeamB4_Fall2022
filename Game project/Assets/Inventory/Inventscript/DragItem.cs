@@ -27,7 +27,7 @@ public class DragItem : MonoBehaviour,
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("anc: x:" + rectTrans.anchoredPosition.x);
-        rectTrans.anchoredPosition += eventData.delta; // / canvas.scaleFactor;
+        rectTrans.anchoredPosition += eventData.delta / 0.76f ; // / canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
