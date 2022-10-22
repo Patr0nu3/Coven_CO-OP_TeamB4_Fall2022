@@ -7,6 +7,8 @@ TagManager:
   - TaskBoard
   - GameHandler
   - Inventory
+  - PauseMenuSlider
+  - DialogueManager
   layers:
   - Default
   - TransparentFX
