@@ -9,6 +9,7 @@ TagManager:
   - Inventory
   - PauseMenuSlider
   - DialogueManager
+  - Wolf
   layers:
   - Default
   - TransparentFX

@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 4653945689706512390}
   - component: {fileID: 4653945689706512391}
   - component: {fileID: 4653945689706512388}
-  - component: {fileID: 3531672848354342563}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -183,15 +182,3 @@ MonoBehaviour:
   moveSpeed: 7
   movement: {x: 0, y: 0}
   myBag: {fileID: 0}
---- !u!114 &3531672848354342563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4653945689706512387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792c12da26e2a1f41aac5fca27c1908c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
