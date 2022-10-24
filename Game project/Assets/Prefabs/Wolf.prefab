@@ -92,16 +92,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8379159566083706388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47634d70bb07e493abfc49aefdcb0c0d, type: 3}
+  m_Script: {fileID: 11500000, guid: c7ccb6145fe6e4f92b64034521e5752b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  startWaitTime: 2
-  moveSpot: {fileID: 0}
-  minX: -5
-  maxX: 5
-  minY: -5
-  maxY: 5
+  GameOver: GameOver
 --- !u!114 &8379159566083706385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,10 +105,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8379159566083706388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a058c8e402ab44458ae886269f688aee, type: 3}
+  m_Script: {fileID: 11500000, guid: a7c4da1c24b8d473aa93cecffa07fe82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameOver: GameOver
+  speed: 3
+  startWaitTime: 2
+  moveSpot: {fileID: 0}
+  minX: -5
+  maxX: 5
+  minY: -5
+  maxY: 5
 --- !u!1 &8379159566088381261
 GameObject:
   m_ObjectHideFlags: 0

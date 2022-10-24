@@ -2742,6 +2742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8379159566083706385, guid: be855cbfe4f1d4305a2b21c3837a8e6d, type: 3}
+      propertyPath: moveSpot
+      value: 
+      objectReference: {fileID: 849660285}
     - target: {fileID: 8379159566083706388, guid: be855cbfe4f1d4305a2b21c3837a8e6d, type: 3}
       propertyPath: m_Name
       value: Wolf

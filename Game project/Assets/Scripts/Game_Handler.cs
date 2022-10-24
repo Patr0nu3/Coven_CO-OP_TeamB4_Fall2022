@@ -80,5 +80,9 @@ public class Game_Handler : MonoBehaviour
     public void MainMenu() {
         SceneManager.LoadScene("MainMenu");
     }
+    
+    public void ResetGame() {
+        Debug.Log("reset game");
+    }
 }
 
