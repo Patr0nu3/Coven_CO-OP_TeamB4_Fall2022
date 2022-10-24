@@ -10,6 +10,8 @@ public class Player_Movement : MonoBehaviour
     public GameObject myBag;
     bool bagIsOpen;
 
+    //public Tilemap obstacles;
+
     private static Player_Movement instance = null;
 
     void Awake() {
