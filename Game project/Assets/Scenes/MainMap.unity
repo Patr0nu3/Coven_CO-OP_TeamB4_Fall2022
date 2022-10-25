@@ -103669,11 +103669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_SortingLayerID
-      value: 2087158415
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_MaskInteraction
@@ -103753,15 +103753,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Size.y
-      value: 0.77
+      value: 0.4980533
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Offset.x
-      value: -0.2
+      value: -0.20000002
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Offset.y
-      value: -0.2
+      value: -0.56907064
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_IsTrigger
