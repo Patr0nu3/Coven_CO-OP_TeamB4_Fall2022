@@ -15,6 +15,9 @@ public class Game_Handler : MonoBehaviour
     public AudioMixer mixer;
     public static float volumeLevel = 1.0f;
     private Slider sliderVolumeCtrl;
+    
+    // coin collection
+    private int coins;
 
     void Awake (){
                 SetLevel (volumeLevel);
@@ -76,6 +79,7 @@ public class Game_Handler : MonoBehaviour
                 UnityEditor.EditorApplication.isPlaying = false;
                 #else
                 rmAllItems();
+                coins = 0;
                 Application.Quit();
                 #endif
       }
@@ -86,6 +90,7 @@ public class Game_Handler : MonoBehaviour
     
     public void ResetGame() {
         rmAllItems();
+        coins = 0;
         Debug.Log("reset game");
     }
 
@@ -95,5 +100,17 @@ public class Game_Handler : MonoBehaviour
         }
         playerInventory.itemList.Clear();
     }
+    
+    //
+    // functions related to coin collection
+    //
+    public int getCoins() {
+        return coins;
+    }
+    
+    public void updateCoins(int val) {
+        coins += val;
+    }
+    
 }
 
