@@ -91,6 +91,7 @@ public class Game_Handler : MonoBehaviour
     public void ResetGame() {
         rmAllItems();
         coins = 0;
+        SceneManager.LoadScene("MainMenu");
         Debug.Log("reset game");
     }
 
