@@ -20,6 +20,8 @@ public class InventoryManager : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 
     //void Start(){
@@ -59,11 +61,19 @@ public class InventoryManager : MonoBehaviour
             Destroy(instance.slotGrid.transform.GetChild(i).gameObject);
         }
 
-        for (int i = 0; i < instance.myBag.itemList.Count; i++) {
-            CreateNewItem(instance.myBag.itemList[i]);
-            // instance.slots.Add(Instantiate(instance.emptySlot));
-            // instance.slots[i].transform.SetParent(instance.slotGrid.transform);
-            // instance.slots[i].GetComponent<slot>().SetUpSlot(instance.myBag.itemList[i]);
+        for (int j = 0; j < instance.myBag.itemList.Count; j++) {
+            if (instance.myBag.itemList[j].itemHeld > 0) {
+                CreateNewItem(instance.myBag.itemList[j]);
+            }
         }
+
+        // for (int j = 0; j < instance.myBag.itemList.Count; j++) {
+        //     if (instance.myBag.itemList[j].itemHeld != 0) {
+        //         CreateNewItem(instance.myBag.itemList[j]);
+        //     }
+        //     // instance.slots.Add(Instantiate(instance.emptySlot));
+        //     // instance.slots[i].transform.SetParent(instance.slotGrid.transform);
+        //     // instance.slots[i].GetComponent<slot>().SetUpSlot(instance.myBag.itemList[i]);
+        // }
     }
 }

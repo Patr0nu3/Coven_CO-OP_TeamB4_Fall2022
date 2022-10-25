@@ -9,6 +9,7 @@ public class Game_Handler : MonoBehaviour
 {
     public static GameHandler gameHandler;
 
+    public inventories playerInventory;
     public static bool GameisPaused = false;
     public GameObject pauseMenuUI;
     public AudioMixer mixer;
@@ -63,6 +64,7 @@ public class Game_Handler : MonoBehaviour
 
     public void StartGame() {
         SceneManager.LoadScene("MainMap");
+        rmAllItems();
     }
 
     public void Credits() {
@@ -73,6 +75,7 @@ public class Game_Handler : MonoBehaviour
                 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
                 #else
+                rmAllItems();
                 Application.Quit();
                 #endif
       }
@@ -82,7 +85,15 @@ public class Game_Handler : MonoBehaviour
     }
     
     public void ResetGame() {
+        rmAllItems();
         Debug.Log("reset game");
+    }
+
+    private void rmAllItems() {
+        for (int i = 0; i < playerInventory.itemList.Count; i++) {
+            playerInventory.itemList[i].itemHeld = 0;
+        }
+        playerInventory.itemList.Clear();
     }
 }
 

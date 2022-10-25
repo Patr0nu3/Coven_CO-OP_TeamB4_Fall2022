@@ -10,6 +10,6 @@ public class items : ScriptableObject
     public int itemHeld;
     [TextArea]
     public string itemInfo;
-
+    public int itemPrice;
     public bool isPotion;
 }
