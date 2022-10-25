@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ItemSubmitBtns: MonoBehaviour
 {
     public inventories playerInventory;
+    // [SerializeField] InventoryManager inventoryManager;
     public Game_Handler gameHandler;
     public GameObject ShopUI;
     
@@ -74,7 +75,7 @@ public class ItemSubmitBtns: MonoBehaviour
         // temp sets amount of each item to 1
         for (int i = 0; i < playerInventory.itemList.Count; i++) {
             Debug.Log(playerInventory.itemList[i].itemName);
-            playerInventory.itemList[i].itemHeld = 1;
+            // playerInventory.itemList[i].itemHeld = 1;
         }
         
         // search for the item in the list
@@ -98,6 +99,10 @@ public class ItemSubmitBtns: MonoBehaviour
                 
                 // set itemSold to true
                 itemSold = true;
+                
+                // refresh inventory UI
+                InventoryManager.RefreshItem();
+                
                 break;
             }
         }
