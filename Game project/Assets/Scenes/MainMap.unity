@@ -7536,7 +7536,7 @@ GameObject:
   - component: {fileID: 210217576}
   - component: {fileID: 210217575}
   m_Layer: 0
-  m_Name: Potion (3)
+  m_Name: mushroom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7554,7 +7554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a10dd6341a4ef499c6482c933d6764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisItem: {fileID: 11400000, guid: d79de3095d8d3fe40b9115ae77968125, type: 2}
+  thisItem: {fileID: 11400000, guid: e3f52378fd2e2e44cb510cfac9402759, type: 2}
   playerInventory: {fileID: 11400000, guid: 870ef7000de45804ab3fdecd2b6ef7bd, type: 2}
 --- !u!61 &210217576
 BoxCollider2D:
@@ -7623,7 +7623,7 @@ SpriteRenderer:
   m_SortingLayerID: 1791154153
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1d52c76b8085ef64396bd08e69dd552d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c318b5953acd71643bc108470d1f8de5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -78629,7 +78629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a10dd6341a4ef499c6482c933d6764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisItem: {fileID: 11400000, guid: d79de3095d8d3fe40b9115ae77968125, type: 2}
+  thisItem: {fileID: 11400000, guid: eb71fd804eabb5d46948859cf4ff78e0, type: 2}
   playerInventory: {fileID: 11400000, guid: 870ef7000de45804ab3fdecd2b6ef7bd, type: 2}
 --- !u!61 &977089333
 BoxCollider2D:
@@ -78698,7 +78698,7 @@ SpriteRenderer:
   m_SortingLayerID: 1791154153
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1d52c76b8085ef64396bd08e69dd552d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 260f54bd541c4ac44ac133a0fd9e4485, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97895,7 +97895,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -103334,7 +103334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a10dd6341a4ef499c6482c933d6764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisItem: {fileID: 11400000, guid: d79de3095d8d3fe40b9115ae77968125, type: 2}
+  thisItem: {fileID: 11400000, guid: 7fbb429807a4b7b4e8441d8186d60cf6, type: 2}
   playerInventory: {fileID: 11400000, guid: 870ef7000de45804ab3fdecd2b6ef7bd, type: 2}
 --- !u!61 &2029402631
 BoxCollider2D:
@@ -103403,7 +103403,7 @@ SpriteRenderer:
   m_SortingLayerID: 1791154153
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1d52c76b8085ef64396bd08e69dd552d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e5c5f36e9f487f40a6c8b38eba4df6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103624,8 +103624,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 11400000, guid: 870ef7000de45804ab3fdecd2b6ef7bd, type: 2}
+  bag: {fileID: 491614512}
   receipt:
-  - Health Potionnull
+  - Mushroomnull
   result:
   - {fileID: 11400000, guid: d79de3095d8d3fe40b9115ae77968125, type: 2}
 --- !u!114 &2090057369 stripped

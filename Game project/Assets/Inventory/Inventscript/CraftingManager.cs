@@ -5,6 +5,7 @@ using UnityEngine;
 public class CraftingManager : MonoBehaviour
 {
     public inventories playerInventory;
+    public GameObject bag;
     private items[] currentItem = new items[2];
     public string[] receipt;
     public items[] result;
@@ -19,12 +20,14 @@ public class CraftingManager : MonoBehaviour
         if (currentItem[0] == null) {
             itemName1 = "null";
         } else {
+            if (currentItem[0].itemHeld <= 0) { return; }
             itemName1 = currentItem[0].itemName;
         }
 
         if (currentItem[1] == null) {
             itemName2 = "null";
         } else {
+            if (currentItem[1].itemHeld <= 0) { return; }
             itemName2 = currentItem[1].itemName;
         }
 
@@ -45,6 +48,7 @@ public class CraftingManager : MonoBehaviour
         }
 
         if (successCraft) {
+            InventoryManager.RefreshItem();
             Debug.Log("Crafted success ");
             // implement success message here
         }

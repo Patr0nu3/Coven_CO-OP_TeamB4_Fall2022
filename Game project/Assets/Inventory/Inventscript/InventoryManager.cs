@@ -22,15 +22,30 @@ public class InventoryManager : MonoBehaviour
         instance = this;
 
         transform.GetChild(0).gameObject.SetActive(false);
+
+        foreach (var item in instance.myBag.itemList) {
+            item.itemHeld = 1;
+        }
+        instance.myBag.itemList.Clear();
     }
 
     //void Start(){
     //    myBag.SetActive(false);
     //}
 
+    // void Update()
+    // {
+    //     RefreshItem();
+    // }
+
     private void OnEnable() {
         RefreshItem();
         instance.itemInfo.text = "";
+    }
+
+    private void OnDisable()
+    {
+        RefreshItem();
     }
 
     public static void UpdateItemInfo(string itemInfo)
@@ -57,23 +72,16 @@ public class InventoryManager : MonoBehaviour
     public static void RefreshItem()
     {
         for (int i = 0; i < instance.slotGrid.transform.childCount; i++) {
-            
             Destroy(instance.slotGrid.transform.GetChild(i).gameObject);
         }
 
         for (int j = 0; j < instance.myBag.itemList.Count; j++) {
+            Debug.Log("j is " + j.ToString());
+            Debug.Log("currItem is " + instance.myBag.itemList[j].itemName);
             if (instance.myBag.itemList[j].itemHeld > 0) {
+                Debug.Log("success:  " + instance.myBag.itemList[j].itemName);
                 CreateNewItem(instance.myBag.itemList[j]);
             }
         }
-
-        // for (int j = 0; j < instance.myBag.itemList.Count; j++) {
-        //     if (instance.myBag.itemList[j].itemHeld != 0) {
-        //         CreateNewItem(instance.myBag.itemList[j]);
-        //     }
-        //     // instance.slots.Add(Instantiate(instance.emptySlot));
-        //     // instance.slots[i].transform.SetParent(instance.slotGrid.transform);
-        //     // instance.slots[i].GetComponent<slot>().SetUpSlot(instance.myBag.itemList[i]);
-        // }
     }
 }

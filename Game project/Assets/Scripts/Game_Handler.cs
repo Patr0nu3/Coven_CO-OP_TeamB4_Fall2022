@@ -96,7 +96,7 @@ public class Game_Handler : MonoBehaviour
 
     private void rmAllItems() {
         for (int i = 0; i < playerInventory.itemList.Count; i++) {
-            playerInventory.itemList[i].itemHeld = 0;
+            playerInventory.itemList[i].itemHeld = 1;
         }
         playerInventory.itemList.Clear();
     }

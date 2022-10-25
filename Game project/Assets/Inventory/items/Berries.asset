@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 420d56f9998e4d643b08d685bfe8403a, type: 3}
-  m_Name: New item
+  m_Name: Berries
   m_EditorClassIdentifier: 
-  itemName: 
-  itemImage: {fileID: 0}
-  itemHeld: 0
+  itemName: Berries
+  itemImage: {fileID: 21300000, guid: 8268f8550e93eed4f952a66ca7a5788b, type: 3}
+  itemHeld: 1
   itemInfo: 
+  itemPrice: 0
   isPotion: 0
