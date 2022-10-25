@@ -104150,6 +104150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemSell_UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4804948882654036773, guid: 808aa67ad8dee48ebb11f142467619d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4804948882757201465, guid: 808aa67ad8dee48ebb11f142467619d7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
