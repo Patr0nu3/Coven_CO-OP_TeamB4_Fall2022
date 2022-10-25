@@ -67,7 +67,7 @@ public class Game_Handler : MonoBehaviour
 
     public void StartGame() {
         SceneManager.LoadScene("MainMap");
-        rmAllItems();
+        //rmAllItems();
     }
 
     public void Credits() {

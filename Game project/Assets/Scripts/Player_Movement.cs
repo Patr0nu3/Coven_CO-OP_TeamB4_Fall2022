@@ -15,13 +15,13 @@ public class Player_Movement : MonoBehaviour
     private static Player_Movement instance = null;
 
     void Awake() {
-        if (instance == null) {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        } else if (instance != this) {
-            Destroy(this.gameObject);
-            return;
-        }
+        //if (instance == null) {
+        //    instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //} else if (instance != this) {
+        //    Destroy(this.gameObject);
+        //    return;
+        //}
     }
 
     void Start()
