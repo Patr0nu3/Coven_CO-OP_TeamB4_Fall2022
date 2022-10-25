@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-// using System;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Wolf_PatrolRandomSpace : MonoBehaviour
 {
     public Animator anim;
-    public float speed = 10f;
+    public string GameOver = "GameOver";
+       
+       public float speed = 10f;
        private float waitTime;
        public float startWaitTime = 2f;
 
@@ -40,5 +42,22 @@ public class Wolf_PatrolRandomSpace : MonoBehaviour
                             anim.SetBool("run", false);
                      }
               }
+       }
+       
+       public void OnTriggerEnter2D(Collider2D other) {             
+             // attacks player if hit
+             if (other.gameObject.tag == "Player") {
+                   SceneManager.LoadScene (GameOver);
+             } 
+             
+             if (other.gameObject.tag != "Player") {
+                 // if it hits something else, try different direction
+                 float randomX = Random.Range(minX, maxX);
+                 float randomY = Random.Range(minY, maxY);
+                 moveSpot.position = new Vector2(randomX, randomY);
+                 waitTime = startWaitTime;
+                 anim.SetBool("run", true);
+             }
+             // test for other than player --> reverse its direction? get new one? --> move attackplayer to patrol
        }
 }
