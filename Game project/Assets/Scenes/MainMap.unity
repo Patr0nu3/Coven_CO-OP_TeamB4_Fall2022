@@ -103964,6 +103964,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: df960855170345841a63f8beef56457a, type: 3}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222486, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222489, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653945687954222489, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512387, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -104022,19 +104066,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Size.x
-      value: 0.63327503
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Size.y
-      value: 0.56584066
+      value: 0.4980533
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Offset.x
-      value: -0.036672473
+      value: -0.20000002
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_Offset.y
-      value: -1.0384572
+      value: -0.56907064
       objectReference: {fileID: 0}
     - target: {fileID: 4653945689706512391, guid: 19e9cf51cf4f69944b35a773218da0d0, type: 3}
       propertyPath: m_IsTrigger

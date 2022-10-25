@@ -40,6 +40,11 @@ public class Player_Movement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
         movement = movement.normalized;
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if (movement.x > 0) {
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+        } else if (movement.x < 0) {
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     void openInventory()
