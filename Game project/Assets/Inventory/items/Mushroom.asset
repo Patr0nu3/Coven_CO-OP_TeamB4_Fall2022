@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Mushroom
   itemImage: {fileID: 21300000, guid: c318b5953acd71643bc108470d1f8de5, type: 3}
-  itemHeld: 1
-  itemInfo: 
-  itemPrice: 0
+  itemHeld: 2
+  itemInfo: Cautious, Highly toxic
+  itemPrice: 10
   isPotion: 0

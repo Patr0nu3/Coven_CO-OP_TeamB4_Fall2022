@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 420d56f9998e4d643b08d685bfe8403a, type: 3}
-  m_Name: Strength Potion
+  m_Name: Key
   m_EditorClassIdentifier: 
-  itemName: Strength Potion
-  itemImage: {fileID: 21300000, guid: 260f54bd541c4ac44ac133a0fd9e4485, type: 3}
+  itemName: Key
+  itemImage: {fileID: 32117989, guid: 88d549a3d944bb243a7e75cf3cb35359, type: 3}
   itemHeld: 1
-  itemInfo: It says "do not drink with empty stomach"
-  itemPrice: 60
-  isPotion: 1
+  itemInfo: Another way to win the game :)
+  itemPrice: 0
+  isPotion: 0

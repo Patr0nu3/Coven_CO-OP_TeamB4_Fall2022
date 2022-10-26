@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Blue Potion
   itemImage: {fileID: 21300000, guid: 260f54bd541c4ac44ac133a0fd9e4485, type: 3}
   itemHeld: 1
-  itemInfo: 
+  itemInfo: Magic diet coke, sugar free
   itemPrice: 60
   isPotion: 1

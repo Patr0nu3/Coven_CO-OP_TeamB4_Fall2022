@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Jellyfish
   itemImage: {fileID: 21300000, guid: 3143a3bc930934ee7b9da75e497586a6, type: 3}
   itemHeld: 1
-  itemInfo: 
-  itemPrice: 0
+  itemInfo: Looks like a Jellyfish
+  itemPrice: 20
   isPotion: 0

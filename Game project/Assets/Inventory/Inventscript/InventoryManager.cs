@@ -21,7 +21,7 @@ public class InventoryManager : MonoBehaviour
         }
         instance = this;
 
-        transform.GetChild(0).gameObject.SetActive(false);
+        transform.GetChild(2).gameObject.SetActive(false);
 
         foreach (var item in instance.myBag.itemList) {
             item.itemHeld = 1;

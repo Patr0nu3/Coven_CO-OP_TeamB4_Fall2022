@@ -12,7 +12,7 @@ public class Player_Movement : MonoBehaviour
 
     //public Tilemap obstacles;
 
-    private static Player_Movement instance = null;
+    // private static Player_Movement instance = null;
 
     void Awake() {
         //if (instance == null) {

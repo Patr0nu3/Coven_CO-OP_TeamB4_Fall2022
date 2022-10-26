@@ -26,6 +26,7 @@ public class Game_Handler : MonoBehaviour
                         sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
                         sliderVolumeCtrl.value = volumeLevel;
                 }
+                coins = 0;
     }
 
     // Start is called before the first frame update
@@ -45,6 +46,9 @@ public class Game_Handler : MonoBehaviour
             else{
                 Pause();
             }
+        }
+        if (coins >= 1000) {
+            QuitGame();
         }
     }
 
@@ -78,7 +82,7 @@ public class Game_Handler : MonoBehaviour
                 #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;
                 #else
-                rmAllItems();
+                // rmAllItems();
                 coins = 0;
                 Application.Quit();
                 #endif
@@ -89,18 +93,18 @@ public class Game_Handler : MonoBehaviour
     }
     
     public void ResetGame() {
-        rmAllItems();
+        // rmAllItems();
         coins = 0;
         SceneManager.LoadScene("MainMenu");
         Debug.Log("reset game");
     }
 
-    private void rmAllItems() {
-        for (int i = 0; i < playerInventory.itemList.Count; i++) {
-            playerInventory.itemList[i].itemHeld = 1;
-        }
-        playerInventory.itemList.Clear();
-    }
+    // private void rmAllItems() {
+    //     for (int i = 0; i < playerInventory.itemList.Count; i++) {
+    //         playerInventory.itemList[i].itemHeld = 1;
+    //     }
+    //     playerInventory.itemList.Clear();
+    // }
     
     //
     // functions related to coin collection
@@ -110,6 +114,7 @@ public class Game_Handler : MonoBehaviour
     }
     
     public void updateCoins(int val) {
+        Debug.Log("coins: " + coins.ToString() + ", val: " + val.ToString());
         coins += val;
     }
     

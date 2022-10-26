@@ -95,7 +95,7 @@ public class ItemSubmitBtns: MonoBehaviour
                 // update coins UI
                 // int currCoins = int.Parse(playerCoins.text) + playerInventory.itemList[i].itemPrice;
                 
-                playerCoins.text = gameHandler.getCoins().ToString();
+                playerCoins.text = gameHandler.getCoins().ToString() + "/ 1000";
                 
                 // set itemSold to true
                 itemSold = true;

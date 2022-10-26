@@ -15,6 +15,6 @@ MonoBehaviour:
   itemName: Berries
   itemImage: {fileID: 21300000, guid: 8268f8550e93eed4f952a66ca7a5788b, type: 3}
   itemHeld: 1
-  itemInfo: 
-  itemPrice: 0
+  itemInfo: Organic blue berries, good for your eyes
+  itemPrice: 10
   isPotion: 0
